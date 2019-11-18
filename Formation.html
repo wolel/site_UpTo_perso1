@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/5c87734899.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+    <title>Formation</title>
+    <link rel="stylesheet" href="formation.css">
+
+</head>
+<body>
+<header>
+    <nav class="nav">
+        <div>
+            <img id="bandeau_header" src="img/background_3.jpg" alt="up_to" style="width: 100%">
+        </div>
+        <ul class="menu_flex">
+
+            <li class="flex_items menu-item accueil"><a href="index.html" ><span class="icon"><i class="fas fa-home"></i></span>
+                <p class="txtNav">Accueil</p></a></li>
+            <li class="flex_items menu-item formation"><a href="Formation.html" ><span class="icon"><i class="fas fa-laptop-code"></i></span>
+                <p class="txtNav">Formation</p></a></li>
+            <li class="flex_items menu-item promotions enfant">
+                <a href="Promotions.html" ><span class="icon"><i class="fas fa-portrait"></i></span>
+                    <p class="txtNav">Promotions</p></a>
+                <!--<ul class="sous_menu">
+                    <li><a href="#">2018-2019</a></li>
+                    <li><a href="#">2019-2020</a></li>
+                </ul>-->
+            </li>
+            <li class="flex_items menu-item contacts"><a href="Contact.html"><span class="icon"><i class="far fa-paper-plane"></i></span>
+                <p class="txtNav">Contacts</p></a></li>
+
+            <li class="flex_items menu-item actu"><a href="Actualités.html"><span class="icon"><i class="far fa-sticky-note"></i></span>
+                <p class="txtNav">Actualités</p></a></li>
+
+            <li class="flex_items menu-item partenaires"><a href="Partenaires.html"><span class="icon"><i class="fas fa-hands-helping"></i></span>
+                <p class="txtNav">Partenaires</p></a></li>
+
+            <li class="flex_items menu-item utilisateurs enfant"><a href="#popup"><span class="icon"><i class="fas fa-sign-in-alt"></i></span>
+                <p class="txtNav">Espace utilisateurs</p></a>
+
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<section>
+    <div class="bloc_gauche" id="formation">
+        <div class=" lnVerticale">
+        <h1>Devenir développeur web</h1>
+        </div>
+        <h2 class="H2Actualite">En huit mois, obtenez les savoirs et les compétences d'un bac+2</h2>
+        <p> Huit mois de formation, alternant théorie et exercices tout en privilégiant la pratique.
+            Vous apprendrez à créer un site web de A à Z, à le faire fonctionner,
+            le sécuriser et le relier avec les bases de données adéquates.</p>
+        Soit :
+            <ul>
+                <li>840h dédiées au développement
+                    <ul>
+                        <li>Front-end (la partie visible du site)</li>
+                        <li>Back-end (les coulisses, les fonctionnalités)</li>
+                        <li>Administration systèmes</li>
+                        <li>Programmation d'objets connectés</li>
+                        <li>Gestion de projet</li>
+                        <li>Conception d'interfaces</li>
+                    </ul>
+                </li>
+                <li>1 jours par semaine d'accompagnement à l'emploi</li>
+                <li>1 mois de stage</li>
+            </ul>
+        <div class=" lnVerticale">
+        <h1>Prérequis</h1>
+        </div>
+
+        <p>AUCUN!</p>
+        <p>Connaître les bases du fonctionnement d'un PC et quelques bases en anglais sont toutefois un atout.</p>
+    </div>
+        <div class="bloc_droit"><h2> Les technologies enseignées </h2>
+            <div class="container">
+                <div class="row tableau" >
+                    <div class="col-sm"><img src="img/html.png" ></div>
+                    <div class="col-sm"><img src="img/css31600.png"/></div>
+                    <div class="col-sm"><img src="img/Bootstrap-4-1.png"></div>
+                </div>
+                <div class="row tableau">
+                    <div class="col-sm"><img src="img/img_js.png"></div>
+                    <div class="col-sm"><img src="img/angular.png"></div>
+                    <div class="col-sm"><img src="img/jquery.gif"></div>
+                </div>
+                <div class="row tableau">
+                    <div class="col-sm"><img src="img/php_PNG7.png"></div>
+                    <div class="col-sm"><img src="img/mysql-logo_2800x2800_pixels1.png"></div>
+                    <div class="col-sm"><img src="img/symfony_black_03.png"></div>
+                </div>
+                <div class="row tableau">
+                    <div class="col-sm"><img src="img/phpstorm-logo.png"></div>
+                    <div class="col-sm"><img src="img/github1600.png"></div>
+                    <div class="col-sm"><img src="img/github-desktop-icon.png"></div>
+                </div>
+            </div>
+        </div>
+      <!------------------------------------------------------>
+
+            <div class="bloc_droit2">
+                <fieldset class="inscription">
+                    <div class="form">
+                        <label for="login">Login</label>
+                        <input type="text" name ="pseudo" id="login" maxlength="9"/>
+                    </div>
+                    <div class="form">
+                        <label for="MP">Password</label>
+                        <input type="password" name="pass" id="MP">
+                    </div>
+                    <div class="form">
+                        <label for="mail">Email</label>
+                        <input type="email" name="mail" id="mail">
+                    </div>
+                    <div class="form">
+                        <label for="msg"></label>
+                        <textarea name="user_name" id="msg" >Décrivez votre motivation</textarea>
+                    </div>
+                    <div id="envoyer">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </fieldset>
+        <!------------------------------------------------------>
+
+        </div>
+    <div class="bloc_gauche">
+        <div class=" lnVerticale">
+        <h1>Inscription</h1>
+            <div class=" lnVerticale">
+        <form method="post" action="#">
+
+        </form>
+    </div>
+       </section>
+
+<footer>
+
+    <img src="img/logoface.jpg" alt="logo face thiérache">
+
+
+    <div class ="txt_footer" >
+        <p> @copyright 2019 - Up To Fourmies</p>
+        <p>Tous droits réservés</p>
+        <p><a href="#">Mentions légales</a></p>
+        <p> Plan du site : </p>
+        <a href="#"><p> Accueil</p></a>
+        <a href="#"><p>Formation</p></a>
+        <a href="#"><p>Promotions</p></a>
+        <a href="#"><p>Actualités</p></a>
+        <a href="#"><p>Partenaires</p></a>
+
+    </div>
+    <div>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fas fa-envelope-square"></i>
+    </div>
+
+
+</footer>
+
+<script src="btn cacher.js"></script></body>
+</html>

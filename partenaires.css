@@ -1,0 +1,511 @@
+* {
+    box-sizing: border-box;
+}
+/* COLORS */
+body, html {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat Alternates Medium", sans-serif;
+    background-color:#395285;
+    background-image: url("img/transparent-background-01.png");
+
+
+}
+#bandeau_header{
+    background-size: 50%;
+}
+p {
+    color: white;
+    font-family: "Open Sans Light", serif;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 42px;
+}
+.fa-home, .fa-laptop-code, .fa-portrait, .fa-paper-plane,.fa-sticky-note,.fa-hands-helping,.fa-sign-in-alt,.fa-envelope-square,.fa-twitter-square,.fa-facebook-square
+{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding: 15px 10px 0 10px;
+    transition: .4s ease;
+}
+i:hover{.fa-home
+    transform: rotate(360deg);
+    color: white;
+}
+
+.txtNav{
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    font-family: "Open Sans", serif;
+}
+
+.lnVerticale{
+    border-left: 5px solid white;
+    height: auto;
+    width: auto;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    padding: 0 0 0 30px;
+    text-align: left;
+}
+
+h1 strong, h2 strong {
+    color: #f25f29;
+
+}
+
+h2 {
+    font-size: medium;
+    padding: .3em;
+    color: #f25f29;
+}
+
+/*
+/* header*/
+header {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.nav ul {
+    list-style: none;
+    z-index: 3;
+    padding: 0;
+}
+
+
+.nav a {
+    text-align:center;
+    text-decoration: none;
+    color:white;
+}
+
+.nav .menu_flex {
+    display:flex;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 2px 2px #17195d;
+}
+
+.flex_items {
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+    color:#fefefe;
+    letter-spacing: 2px;
+    border-bottom: 2px;
+
+}
+.menu-item {
+    cursor: pointer;
+    background-color: #395285;
+}
+
+.flex_items.logo {
+    background: transparent;
+    align-items: flex-start;
+}
+
+.flex_items:hover {
+    transform: skew(5deg);
+    background-color: #354170;
+
+}
+
+.bloc_gauche{
+    float: left;
+    width: 60%;
+    padding: 80px 50px 80px 50px;
+    margin-top: 20px;
+
+}
+.bloc_droit {
+    box-shadow: 0 4px 5px #17195d;
+    float: right;
+    width: 37%;
+    padding: 2em;
+    margin-top: 9em;
+    text-align: center;
+    background-color: white;
+}
+/*-----------------------PARTENAIRES (Elena)-------------------------------------------------*/
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property
+to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+h3{color: white}
+p{text-align: justify-all;line-height: 28px;padding-top: 10px;
+    font-family: "Oswald Light", serif}
+#containerFlex{
+    display: flex;flex-flow: row wrap;justify-content: center;margin: 80px 100px 80px 100px}
+.fab{color:white ;font-size: 300%;transition: .1s}
+.fab:hover{transform: scale(1.2,1.2);color:rgb(58,85,159)}
+.fa-angle-left{margin: 50px 0 0 50px; color:rgb(0,152,153); font-size: 320%;justify-self: flex-start}
+.fa-angle-left:hover{background-color:rgb(0,152,153);color:white;border-radius: 5px;}
+
+/*----------------------------------logo Fourmies--------------------------*/
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 350px;
+    perspective: 800px; /* Remove this if you don't want the 3D effect */
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    border: none;
+}
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 20px;
+    border:none;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+/* Style the back side */
+.flip-card-back {
+    background-color: #bbb;
+    color: white;
+    transform: rotateY(180deg);
+}
+/*------------------------logo Haut de France---------------------------*/
+/* Position the front and back side */
+.flip-card-front_1, .flip-card-back_1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 20px;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front_1 {
+    background-color: white;
+    color: black;
+}
+/* Style the back side */
+.flip-card-back_1 {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+/*------------------------logo Face Hierache---------------------------*/
+/* Position the front and back side */
+.flip-card-front_2, .flip-card-back_2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 20px;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front_2 {
+    background-color: rgb(35,137,141);
+    color: black;
+}
+/* Style the back side */
+.flip-card-back_2 {
+    background-color: rgb(35,137,141);
+    color: white;
+    transform: rotateY(180deg);
+}
+/*---------------------------logo Sud Avesnois---------------------------*/
+/* Position the front and back side */
+.flip-card-front_3, .flip-card-back_3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 20px;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front_3 {
+    background-color:white;
+    color: black;
+}
+/* Style the back side */
+.flip-card-back_3 {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+/*-------------------------------logo Departement du Nord------------*/
+/* Position the front and back side */
+.flip-card-front_4, .flip-card-back_4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 20px;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front_4 {
+    background-color:rgb(106,123,149);
+    color: black;
+}
+/* Style the back side */
+.flip-card-back_4 {
+    background-color: rgb(106,123,149);
+    color: white;
+    transform: rotateY(180deg);
+}
+/*--------------------------------logo Reussir en Sambre---------------*/
+/* Position the front and back side */
+.flip-card-front_5, .flip-card-back_5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 20px;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front_5 {
+    background-color:white;
+    color: black;
+}
+/* Style the back side */
+.flip-card-back_5 {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+/*----------------------------------logo FEJ---------------------------*/
+/* Position the front and back side */
+.flip-card-front_6, .flip-card-back_6 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 20px;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front_6 {
+    background-color:rgb(37,74,165);
+    color: black;
+}
+/* Style the back side */
+.flip-card-back_6 {
+    background-color: rgb(37,74,165);
+    color: white;
+    transform: rotateY(180deg);
+}
+/*--------------------------------logo Simplon---------------------------*/
+/* Position the front and back side */
+.flip-card-front_7, .flip-card-back_7 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 20px;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front_7 {
+    background-color:white;
+    color: black;
+}
+/* Style the back side */
+.flip-card-back_7 {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+/*---------------------------------logo grande_ecole_du_numrique----------*/
+/* Position the front and back side */
+.flip-card-front_8, .flip-card-back_8 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 20px;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front_8 {
+    background-color:rgb(121,20,10);
+    color: black;
+}
+/* Style the back side */
+.flip-card-back_8 {
+    background-color: rgb(121,20,10);
+    color: white;
+    transform: rotateY(180deg);
+}
+/*-----------------------------------------------------------------------------------------FIN--------------*/
+
+/*footer*/
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: #f25f29;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt_footer p {
+    display: inline-block;
+    font-family: "Open Sans", serif;
+    font-size: 15px;
+    padding: 30px;
+    margin-left: 5px;
+
+}
+
+
+/*media queries*/
+/*  pour tablettes*/
+@media (max-width:1024px) {
+    #icones_footer > i {
+        font-size: 2.5em;
+        padding: .5em 1em;
+    }
+}
+
+/*pour smartphone-landscape-tablettes*/
+@media (max-width: 812px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        width: 130%;
+    }
+
+    section {
+        width: 100%;
+    }
+    #bloc_gauche {
+        float: left;
+        width: 63%;
+        margin: 0;
+        padding-left: 1em;
+        padding-bottom: 1em;
+    }
+    section aside {
+        width: 37%;
+        float: right;
+        padding: 0;
+    }
+
+    footer {
+        width: 130%;}
+    #icones_footer > i {
+        font-size: 2.5em;
+        padding: .5em 1em;
+    }
+
+}
+
+/*petit smart*/
+@media (max-width: 640px) {
+
+
+    .nav .menu_flex {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #bandeau {
+        display: none
+    }
+
+    section {
+        position: absolute;
+        top: 0;
+        padding-left: 5em;
+    }
+
+    #bloc_gauche {
+        float: right;
+        width: 100%;
+        margin: 0;
+        padding-left: 1em;
+        padding-bottom: 1em;
+    }
+
+    section aside {
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    body {
+        position: relative;
+        padding-bottom: 120em;
+    }
+
+    footer {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    #icones_footer > i {
+        font-size: 2.5em;
+        padding: .5em 1em;
+    }
+
+}
+
+/*-------------media queries-----------*/
+
+@media screen and (min-width: 320px) and (max-width: 568px){
+       .flip-card {
+        background-color: transparent;
+        width:100%;
+        height: 350px;
+        perspective: 800px;} /* Remove this if you don't want the 3D effect */
+   h2{color: white}
+  }
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .flip-card {
+        background-color: transparent;
+        width:50%;
+        height: 350px;}
+
+    h2{color: white}
+}
+
+
+
+
+
+
+
